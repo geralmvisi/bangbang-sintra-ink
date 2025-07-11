@@ -1,5 +1,11 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
+import tattooRealistic from '@/assets/tattoo-realistic.jpg';
+import tattooTraditional from '@/assets/tattoo-traditional.jpg';
+import tattooFineline from '@/assets/tattoo-fineline.jpg';
+import tattooBlackwork from '@/assets/tattoo-blackwork.jpg';
+import tattooColor from '@/assets/tattoo-color.jpg';
+import tattooLettering from '@/assets/tattoo-lettering.jpg';
 
 const GallerySection = () => {
   const [activeFilter, setActiveFilter] = useState('all');
@@ -14,17 +20,17 @@ const GallerySection = () => {
     { id: 'lettering', name: 'Lettering' },
   ];
 
-  // Placeholder gallery items - in a real app, these would come from a CMS or API
+  // Gallery items with professional tattoo images
   const galleryItems = [
-    { id: 1, category: 'traditional', title: 'Rosa Traditional', image: 'https://images.unsplash.com/photo-1565058379802-bbe93b2b2a96?w=400&h=400&fit=crop' },
-    { id: 2, category: 'realism', title: 'Retrato Realista', image: 'https://images.unsplash.com/photo-1590736969955-71cc94901144?w=400&h=400&fit=crop' },
-    { id: 3, category: 'fineline', title: 'Fine Line Floral', image: 'https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=400&h=400&fit=crop' },
-    { id: 4, category: 'blackwork', title: 'Mandala Blackwork', image: 'https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?w=400&h=400&fit=crop' },
-    { id: 5, category: 'color', title: 'Aquarela Colorida', image: 'https://images.unsplash.com/photo-1562962230-16e4623d36e6?w=400&h=400&fit=crop' },
-    { id: 6, category: 'lettering', title: 'Script Lettering', image: 'https://images.unsplash.com/photo-1518568814500-bf0f8d125f46?w=400&h=400&fit=crop' },
-    { id: 7, category: 'traditional', title: 'Caveira Traditional', image: 'https://images.unsplash.com/photo-1508792227116-b7d2dbe39334?w=400&h=400&fit=crop' },
-    { id: 8, category: 'realism', title: 'Animal Realista', image: 'https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=400&h=400&fit=crop' },
-    { id: 9, category: 'fineline', title: 'Geometric Fine Line', image: 'https://images.unsplash.com/photo-1611195974226-ef16628f2890?w=400&h=400&fit=crop' },
+    { id: 1, category: 'traditional', title: 'Rosa Traditional', image: tattooTraditional },
+    { id: 2, category: 'realism', title: 'Retrato Realista', image: tattooRealistic },
+    { id: 3, category: 'fineline', title: 'Fine Line Floral', image: tattooFineline },
+    { id: 4, category: 'blackwork', title: 'Mandala Blackwork', image: tattooBlackwork },
+    { id: 5, category: 'color', title: 'Aquarela Colorida', image: tattooColor },
+    { id: 6, category: 'lettering', title: 'Script Lettering', image: tattooLettering },
+    { id: 7, category: 'traditional', title: 'Flash Traditional', image: tattooTraditional },
+    { id: 8, category: 'realism', title: 'Retrato Feminino', image: tattooRealistic },
+    { id: 9, category: 'fineline', title: 'Geometric Fine Line', image: tattooFineline },
   ];
 
   const filteredItems = activeFilter === 'all' 

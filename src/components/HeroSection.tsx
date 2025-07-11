@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Calendar, MapPin, Instagram } from 'lucide-react';
+import studioInterior from '@/assets/studio-interior.jpg';
 
 const HeroSection = () => {
   const scrollToSection = (id: string) => {
@@ -15,8 +16,8 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-gradient-dark">
         <div className="absolute inset-0 bg-gradient-glow opacity-20"></div>
         <img 
-          src="/lovable-uploads/9b7a1e00-8b2e-4d63-8e39-2253e349e915.png"
-          alt="BangBang Tattoo Studio"
+          src={studioInterior}
+          alt="BangBang Tattoo Studio Interior"
           className="w-full h-full object-cover opacity-30"
         />
       </div>
